@@ -8,15 +8,18 @@ description: |
 grade: devel # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs and slots
 
+architectures:
+  - amd64
+
 parts:
   tester-dclane:
     # See 'snapcraft plugins'
     plugin: make
     source: https://github.com/dclane-code/tester-dclane.git
-    stage-packages:
-    - ca-certificates
+    build-packages:
+    - openjdk-17-jre-headless
     - ca-certificates-java
-    - openjdk-17-jdk
+    - ca-certificates
 
 apps:
   tester-dclane:
