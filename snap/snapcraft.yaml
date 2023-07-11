@@ -15,7 +15,7 @@ parts:
   tester-dclane:
     # See 'snapcraft plugins'
     plugin: make
-    source: https://github.com/dclane-code/tester-dclane.git
+    source: tester.tgz
     build-packages:
     - openjdk-17-jre-headless
     - ca-certificates-java
