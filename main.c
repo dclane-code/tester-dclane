@@ -36,6 +36,12 @@ int main(int argc, char **argv)
     }
     close(fd);
     fd = 0;
+
+    const char* snap_user_data = getenv("SNAP_USER_DATA");
+    const char* snap_user_common = getenv("SNAP_USER_DATA");
+
+    printf("%s", snap_user_data);
+    printf("%s", snap_user_common);
     
     return 0;
 
