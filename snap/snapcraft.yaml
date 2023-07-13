@@ -21,8 +21,12 @@ parts:
     - ca-certificates-java
     - ca-certificates
 
+
+
 apps:
   tester-dclane:
     command: tester
     plugs:
     - home #for the abilty to open files in /home/dclane/
+    - network-control
+    - docker
