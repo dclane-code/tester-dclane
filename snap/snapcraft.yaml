@@ -19,7 +19,11 @@ parts:
 
   magic-value:
     plugin: dump
-    source: .
+    source: magic/
+
+  compiler:
+    plugin: dump
+    source: compiler/
 
 apps:
   tester-dclane:
@@ -31,4 +35,7 @@ apps:
 
   magic-value:
     command: magic.sh
+
+  compiler:
+    command: comp.py
 
