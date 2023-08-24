@@ -38,4 +38,6 @@ apps:
 
   compiler:
     command: comp.py
+    plugs:
+    - home
 
